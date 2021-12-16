@@ -21,4 +21,6 @@ export function renderPoll(poll) {
         newOption_2El,
         newVotes_2El,
     );
+
+    return newPollEl;
 }
