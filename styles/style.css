@@ -28,7 +28,8 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgb(192, 154, 230);
+
 }
 
 main {
@@ -77,6 +78,7 @@ header img {
 
 p {
     margin: var(--gutter);
+    
 }
   
 footer {
@@ -88,4 +90,29 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.current-poll-contianer {
+    justify-items: center;
+}
+input{ 
+    display:flex;
+    flex-direction: column;
+}
+
+.past-polls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.bottom {
+    width: 100%;
+    border-top: solid 1px; black;
+}
+
+.poll{
+    border: solid 1px black;
+    
 }
