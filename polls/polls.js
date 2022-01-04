@@ -49,15 +49,15 @@ pollFormEl.addEventListener('submit', (e) => {
 
 optionOneAddButton.addEventListener('click', () => {
     optionOneVotes++;
-    optionOneVotesEl.textContent = optionOneVotes;
+    // optionOneVotesEl.textContent = optionOneVotes;
 
-    
+    displayCurrentPoll();
 });
 
 optionTwoAddButton.addEventListener('click', () => {
     optionTwoVotes++;
-    optionTwoVotesEl.textContent = optionTwoVotes;
-    
+    // optionTwoVotesEl.textContent = optionTwoVotes;
+    displayCurrentPoll();
 });
 
 endPollButton.addEventListener('click', async() => {
@@ -69,10 +69,16 @@ endPollButton.addEventListener('click', async() => {
     optionOneVotes = 0;
     optionTwoVotes = 0;
 
-    
+    displayCurrentPoll();    
 });
 
-
+function displayCurrentPoll() {
+    pollQuestionEl.textContent = question;
+    optionOneTitleEl.textContent = optionOneTitle;
+    optionOneVotesEl.textContent = optionOneVotes;
+    optionTwoTitleEl.textContent = optionTwoTitle;
+    optionTwoVotesEl.textContent = optionTwoVotes;
+}
 
 async function displayPolls() {
     pastPollEl.textContent = '';

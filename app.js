@@ -23,7 +23,7 @@ signUpForm.addEventListener('submit', async(e) =>{
     const password = data.get('password');
 
     await signUpUser(email, password);
-    
+    window.location.href = './polls';
 });
 
 signInForm.addEventListener('submit', async(e) => {
